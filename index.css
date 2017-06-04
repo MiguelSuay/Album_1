@@ -1,0 +1,46 @@
+body {
+background-color:#F9F5EC;
+font:14px Arial;
+}
+.img {
+  display:inline-block;
+  padding: 30px 55px;
+   }
+.photo {
+  width: 240px;
+  height:150px;
+  border-radius:4px;
+  }
+.photo:hover {
+    box-shadow: 6px 5px #A9A9A9;
+    opacity: 0.9;
+    }
+.photo:active {
+  opacity:1;
+  width: 720px;
+  height:450px;
+  border-radius:10px;
+}
+.pagination {
+  bottom:0;
+  left:45%;
+  position:relative;
+  }
+  
+.search {
+  left:40%;
+  position:relative;
+  }
+button {
+  border-radius: 2px;
+  font-weight: 700;
+  background-color:#FFE6D0;
+}
+input {
+  border-radius: 5px;
+}
+.enlarge {
+  width: 2400px;
+  height:1500px;
+  border-radius:4px;
+}
