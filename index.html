@@ -14,9 +14,15 @@
   <body ng-app="myApp" ng-controller="photoCtrl">
     <div>
       <p class="search">Search for what you like: <input ng-model="search"></p>
+      <div class="top">
+          <button class="pagesize" ng-click="pageSize = 4">4 images</button>
+          <button class="pagesize" ng-click="pageSize = 8">8 images</button>
+          <button class="pagesize" ng-click="pageSize = 12">12 images</button>
+          <button class="pagesize" ng-click="pageSize = 16">16 images</button>
+      </div>
         <ul>
             <div class="img" ng-repeat="photo in photos | filter:search |limitTo : pageSize : currentPage*pageSize">
-                <img class= "photo"  src={{photo.name}} />
+                <img class= "photo" ng-click="open()" src={{photo.name}} />
             </div>
         </ul>
         </div>
